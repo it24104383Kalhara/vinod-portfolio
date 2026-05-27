@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Vinod Kalhara</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed min-h-screen flex flex-col">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full bg-surface/80 dark:bg-surface/80 backdrop-blur-xl flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 z-50 border-b border-outline-variant transition-all duration-300">
+        <div class="font-headline-md text-headline-md text-primary-fixed-dim tracking-tighter">
+            Vinod.v3
+        </div>
+        <div class="hidden md:flex gap-8 items-center h-full">
+            <a href="/" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors duration-300 ease-in-out">Home</a>
+            <a href="/projects.html" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors duration-300 ease-in-out">Projects</a>
+            <a href="/about.html" class="font-label-caps text-label-caps text-primary-fixed-dim border-b-2 border-primary-fixed-dim pb-1 transition-all duration-300 ease-in-out">About</a>
+            <a href="/contact.html" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors duration-300 ease-in-out">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="text-primary-fixed-dim p-2 rounded-full hover:bg-surface-container transition-colors">
+                <span class="material-symbols-outlined">terminal</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-24 w-full">
+        <!-- Hero/Bio Section -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center fade-up">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-container/10 border border-primary-container/20 rounded-full text-primary-fixed-dim font-label-caps text-label-caps">
+                    <span class="material-symbols-outlined text-[14px]">school</span>
+                    YEAR 3 SOFTWARE ENGINEERING
+                </div>
+                <h1 class="font-headline-xl text-headline-xl text-on-background">Architecting the <span class="text-primary-fixed-dim">Next Generation</span> of Web Apps.</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Currently pursuing a B.S. in Computer Science, my journey is fueled by a obsession for clean architecture and performant systems. I bridge the gap between academic theory and industry-grade engineering, focusing on scalable cloud infrastructure and reactive user interfaces.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#" class="bg-primary-fixed-dim text-surface px-6 py-3 font-label-caps text-label-caps font-bold rounded-lg hover:brightness-110 transition-all flex items-center gap-2">
+                        DOWNLOAD_RESUME.PDF <span class="material-symbols-outlined text-[18px]">download</span>
+                    </a>
+                    <a href="https://github.com" class="border border-primary-fixed-dim text-primary-fixed-dim px-6 py-3 font-label-caps text-label-caps rounded-lg hover:bg-primary-fixed-dim/10 transition-all">
+                        VIEW_GITHUB
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-5 relative group mt-12 md:mt-0">
+                <div class="absolute -inset-1 bg-gradient-to-tr from-primary-fixed-dim to-secondary-fixed-dim rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <div class="relative glass-panel rounded-xl overflow-hidden aspect-square">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_I9wT9ixba4-95DOHGIl_3wYfpDkJT41xoxbyYpBzkANaNUOycwF3aiSoBEETHMxEtZPptdHB20EVDAoqysz11jJKj6NIZfO1VqiGpXVBWoDmOGtXKBtSgmwp4p7Pve3Ut81St1z4iemG0BXfJWxWGVnasXjJQEQmi4FpTSkZ8oXGs2eugvGyTPbMEtkjYTj8zhKfNqnFvGSQVrpUj0Bb2ToaDlH86LKdtGyv1nBhIQHhJr6IRkWBYYK300sXRgFrAsXr9wiG0Qbz" alt="Developer workspace" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition duration-500" />
+                </div>
+            </div>
+        </section>
+
+        <!-- University Experience Grid -->
+        <section class="space-y-12 fade-up">
+            <h2 class="font-headline-lg text-headline-lg text-on-background flex items-center gap-4">
+                <span class="text-primary-fixed-dim font-code-sm text-code-sm">01/</span> Academic Path
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Academic Card 1 -->
+                <div class="glass-panel p-8 rounded-xl space-y-4 border-t-2 border-t-primary-fixed-dim hover:-translate-y-1 transition-transform">
+                    <div class="font-label-caps text-label-caps text-primary-fixed-dim">2021 - PRESENT</div>
+                    <h3 class="font-headline-md text-headline-md">Advanced Algorithms</h3>
+                    <p class="text-on-surface-variant font-body-md">Specializing in graph theory and dynamic programming. Achieved 98th percentile in competitive programming modules.</p>
+                </div>
+                <!-- Academic Card 2 -->
+                <div class="glass-panel p-8 rounded-xl space-y-4 border-t-2 border-t-secondary-fixed-dim hover:-translate-y-1 transition-transform">
+                    <div class="font-label-caps text-label-caps text-secondary-fixed-dim">CORE COMPETENCY</div>
+                    <h3 class="font-headline-md text-headline-md">System Design</h3>
+                    <p class="text-on-surface-variant font-body-md">Focusing on microservices architecture and CAP theorem applications in distributed databases.</p>
+                </div>
+                <!-- Academic Card 3 -->
+                <div class="glass-panel p-8 rounded-xl space-y-4 border-t-2 border-t-tertiary-fixed-dim hover:-translate-y-1 transition-transform">
+                    <div class="font-label-caps text-label-caps text-tertiary-fixed-dim">FUTURE GOAL</div>
+                    <h3 class="font-headline-md text-headline-md">Cloud Computing</h3>
+                    <p class="text-on-surface-variant font-body-md">Pursuing AWS Solutions Architect Associate certification to augment full-stack capabilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Arsenal (Skills) -->
+        <section class="space-y-12 fade-up">
+            <h2 class="font-headline-lg text-headline-lg text-on-background flex items-center gap-4">
+                <span class="text-primary-fixed-dim font-code-sm text-code-sm">02/</span> Technical Arsenal
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <!-- Left Column: Languages & Frameworks -->
+                <div class="lg:col-span-8 space-y-8">
+                    <!-- Terminal Style Languages -->
+                    <div class="rounded-xl overflow-hidden border border-outline-variant glass-panel">
+                        <div class="terminal-header px-4 py-2 flex items-center gap-2">
+                            <div class="terminal-dots">
+                                <div class="dot bg-[#FF5F56]"></div>
+                                <div class="dot bg-[#FFBD2E]"></div>
+                                <div class="dot bg-[#27C93F]"></div>
+                            </div>
+                            <span class="font-code-sm text-code-sm text-on-surface-variant ml-4 opacity-50">core_languages.sh</span>
+                        </div>
+                        <div class="bg-[#0b0f1a] p-8 space-y-8">
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-end">
+                                    <span class="font-label-caps text-label-caps text-on-surface">TypeScript / JavaScript</span>
+                                    <span class="font-code-sm text-code-sm text-primary-fixed-dim">95%</span>
+                                </div>
+                                <div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full bg-primary-fixed-dim" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-end">
+                                    <span class="font-label-caps text-label-caps text-on-surface">Python (Data Science)</span>
+                                    <span class="font-code-sm text-code-sm text-secondary-fixed-dim">88%</span>
+                                </div>
+                                <div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full bg-secondary-fixed-dim" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-end">
+                                    <span class="font-label-caps text-label-caps text-on-surface">Rust (Systems)</span>
+                                    <span class="font-code-sm text-code-sm text-tertiary-fixed-dim">72%</span>
+                                </div>
+                                <div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+                                    <div class="skill-progress h-full bg-tertiary-fixed-dim" style="width: 72%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks Bento Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-3 group hover:border-primary-fixed-dim transition-colors">
+                            <span class="material-symbols-outlined text-primary-fixed-dim text-4xl group-hover:scale-110 transition-transform">rebase_edit</span>
+                            <span class="font-label-caps text-label-caps">React / Next.js</span>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-3 group hover:border-secondary-fixed-dim transition-colors">
+                            <span class="material-symbols-outlined text-secondary-fixed-dim text-4xl group-hover:scale-110 transition-transform">cloud_done</span>
+                            <span class="font-label-caps text-label-caps">Node / Express</span>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-3 group hover:border-tertiary-fixed-dim transition-colors">
+                            <span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl group-hover:scale-110 transition-transform">database</span>
+                            <span class="font-label-caps text-label-caps">PostgreSQL</span>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-3 group hover:border-error transition-colors">
+                            <span class="material-symbols-outlined text-error text-4xl group-hover:scale-110 transition-transform">animation</span>
+                            <span class="font-label-caps text-label-caps">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Tools & Technologies -->
+                <div class="lg:col-span-4 glass-panel p-8 rounded-xl flex flex-col justify-between border-l-4 border-l-primary-fixed-dim">
+                    <div class="space-y-6">
+                        <h4 class="font-headline-md text-headline-md">DevOps &amp; Tools</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center group-hover:bg-primary-fixed-dim/20 transition-colors">
+                                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed-dim">terminal</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-label-caps text-label-caps text-on-surface">Docker &amp; K8s</div>
+                                    <div class="text-[12px] text-on-surface-variant">Container Orchestration</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center group-hover:bg-primary-fixed-dim/20 transition-colors">
+                                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed-dim">rebase</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-label-caps text-label-caps text-on-surface">Git / GitHub Actions</div>
+                                    <div class="text-[12px] text-on-surface-variant">CI/CD Pipelines</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center group-hover:bg-primary-fixed-dim/20 transition-colors">
+                                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed-dim">dns</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-label-caps text-label-caps text-on-surface">AWS / Vercel</div>
+                                    <div class="text-[12px] text-on-surface-variant">Cloud Infrastructure</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center group-hover:bg-primary-fixed-dim/20 transition-colors">
+                                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed-dim">monitoring</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-label-caps text-label-caps text-on-surface">Prometheus / Grafana</div>
+                                    <div class="text-[12px] text-on-surface-variant">System Monitoring</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-4 bg-primary-container/10 rounded border border-primary-container/20">
+                        <p class="font-code-sm text-code-sm text-on-primary-container italic">
+                            "The best code is the code that never has to be rewritten."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Goals Section -->
+        <section class="glass-panel p-12 rounded-2xl relative overflow-hidden fade-up">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed-dim/5 blur-[100px] -mr-32 -mt-32 pointer-events-none"></div>
+            
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="font-headline-lg text-headline-lg">Vision</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant">
+                        My immediate objective is to transition into a Full-Stack Engineering role at a high-growth tech firm where I can contribute to complex system architectures. I am actively seeking opportunities that challenge my understanding of scalability and real-time data processing.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-surface-container-high border border-transparent hover:border-outline-variant transition-colors">
+                        <span class="material-symbols-outlined text-primary-fixed-dim">rocket_launch</span>
+                        <div>
+                            <h4 class="font-label-caps text-label-caps text-on-surface">Scale</h4>
+                            <p class="text-[14px] text-on-surface-variant mt-1">Deploying applications that serve millions of concurrent requests.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-surface-container-high border border-transparent hover:border-outline-variant transition-colors">
+                        <span class="material-symbols-outlined text-primary-fixed-dim">verified_user</span>
+                        <div>
+                            <h4 class="font-label-caps text-label-caps text-on-surface">Quality</h4>
+                            <p class="text-[14px] text-on-surface-variant mt-1">Advocating for 100% test coverage and zero-downtime deployments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-8 mt-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-4">
+            <div class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">
+                Vinod.v3
+            </div>
+            <div class="font-code-sm text-code-sm text-secondary-fixed-dim opacity-80 hover:opacity-100 transition-colors">
+                © 2024 Built with Precision by Vinod
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="font-code-sm text-code-sm text-on-surface-variant hover:text-secondary-fixed transition-colors">GitHub</a>
+                <a href="#" class="font-code-sm text-code-sm text-on-surface-variant hover:text-secondary-fixed transition-colors">LinkedIn</a>
+                <a href="#" class="font-code-sm text-code-sm text-on-surface-variant hover:text-secondary-fixed transition-colors">Source Code</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

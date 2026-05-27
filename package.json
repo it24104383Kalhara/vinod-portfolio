@@ -1,0 +1,22 @@
+{
+  "name": "vinod-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "K. Vinod Kalhara — Year 3 SE Student Portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "tailwindcss": "^3.4.4",
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}
