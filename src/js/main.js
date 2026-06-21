@@ -84,4 +84,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const skillSection = document.querySelector('.terminal-header')?.parentElement;
   if (skillSection) observer.observe(skillSection);
+
+  // 5. Back to Top Button with Micro-interactions
+  const createBackToTopBtn = () => {
+    let btn = document.getElementById('back-to-top');
+    if (!btn) {
+      btn = document.createElement('button');
+      btn.id = 'back-to-top';
+      btn.className = 'fixed bottom-8 right-8 z-50 flex items-center justify-center w-12 h-12 rounded-[9999px] border border-outline-variant bg-surface-container-low/80 backdrop-blur-md text-on-surface hover:text-primary-fixed-dim hover:border-primary-fixed-dim/50 shadow-lg cursor-pointer opacity-0 translate-y-4 pointer-events-none transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-primary-fixed-dim/5';
+      
+      // Arrow Up Icon
+      btn.innerHTML = `
+        <span class="material-symbols-outlined text-2xl transition-transform duration-300">arrow_upward</span>
+      `;
+      
+      document.body.appendChild(btn);
+      
+      // Scroll to top on click with rocket-launch micro-interaction animation
+      btn.addEventListener('click', () => {
+        // Rocket effect: scale down, shoot up, fade out
+        gsap.to(btn, {
+          y: -48,
+          opacity: 0,
+          scale: 0.85,
+          duration: 0.35,
+          ease: "power2.in",
+          onComplete: () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Soft reset after scrolling starts to clear GSAP inline styles
+            setTimeout(() => {
+              gsap.set(btn, { clearProps: "all" });
+            }, 600);
+          }
+        });
+      });
+    }
+    return btn;
+  };
+
+  const backToTopBtn = createBackToTopBtn();
+
+  // Scroll listener to toggle visibility
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+      backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+    } else {
+      backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+      backToTopBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+    }
+  });
 });
